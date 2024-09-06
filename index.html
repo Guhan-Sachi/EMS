@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">EMS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Employees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tasks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Notifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Dashboard</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Active Employees</h5>
+                        <p class="card-text">120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pending Approvals</h5>
+                        <p class="card-text">15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Department Overview</h5>
+                        <canvas id="departmentChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employee Profiles Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Employee Profiles</h2>
+        <div class="row">
+            <!-- Example Employee Card -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/employee1.jpg" class="card-img-top" alt="Employee Photo">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">Software Engineer</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for more employees -->
+        </div>
+    </div>
+
+    <!-- Footer Section with Employee Profiles -->
+    <footer class="bg-dark text-white mt-5 p-4">
+        <div class="container">
+            <h3 class="text-center mb-4">Employee Spotlight</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card bg-light text-center">
+                        <img src="images/employee2.jpg" class="card-img-top" alt="Employee Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text">Marketing Specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-light text-center">
+                        <img src="images/employee3.jpg" class="card-img-top" alt="Employee Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael Johnson</h5>
+                            <p class="card-text">Sales Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-light text-center">
+                        <img src="images/employee4.jpg" class="card-img-top" alt="Employee Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Alice Williams</h5>
+                            <p class="card-text">HR Coordinator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-light text-center">
+                        <img src="images/employee5.jpg" class="card-img-top" alt="Employee Photo">
+                        <div class="card-body">
+                            <h5 class="card-title">Robert Brown</h5>
+                            <p class="card-text">Finance Analyst</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include Bootstrap JS and Custom JS -->
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
